@@ -36,13 +36,23 @@
         <echo message="compiling.........."/>
         <javac destdir="${build.dir}" srcdir="${src.dir}" classpath="${test.classpath}"/>
     </target>
-	
+<!--	
    <target name="runTests" depends="compile">
    	     <testng classpath="${test.classpath}:${build.dir}">
     	 <xmlfileset dir="${basedir}" includes="testng.xml"/>
         </testng>
     </target>
-	
+-->	
+	<target  depends="compile" name="runTests" description="Running tests" >
+        <echo>Running Tests...</echo>
+        <!--<taskdef resource="testngtasks" classpathref="classpath"/>-->
+        <testng outputDir="${report.dir}"
+           
+            classpath="${test.classpath}:${build.dir}">
+            <xmlfileset dir="${basedir}" includes="testng.xml"/>
+            <!--<classfileset dir="${classes.dir}" includes="**/*.class" />-->
+        </testng>
+    </target>
 	  
 	   
 </project>
