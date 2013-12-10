@@ -28,6 +28,7 @@ public class JCatalogTest extends MainDriver{
 		driver.findElement(By.name("loginForm:_id24")).click();
 		}
 	 
+	
 	@Test(priority = 0)
 	public void Testlogin(){
 		
@@ -103,23 +104,11 @@ public class JCatalogTest extends MainDriver{
 		
 	}
 	
-	@Test(priority = 9)
+	/*@Test(priority = 9)
 	public void Testlogout(){
 		Logout.logout();
 		closeBrowser();
-	}
+	}*/
 	
-   public static void main(String[] args){
-	   JCatalogTest jct = new JCatalogTest();
-	   jct.Testlogin();
-	   jct.TestcategoryOne();
-	   jct.Testcategorytwo();
-	   jct.Testcategorythree();
-	   jct.Testcategoryfour();
-	   jct.TestnewProduct();
-	   jct.TestproductList();
-	   jct.Testcontactus();
-	   jct.Testplaceorder();
-	   jct.Testlogout();
-   }
+   
 }
