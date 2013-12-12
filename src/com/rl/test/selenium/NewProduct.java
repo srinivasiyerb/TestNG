@@ -25,10 +25,10 @@ public class NewProduct extends MainDriver{
 	public static void ProductList(){
 		driver.findElement(By.xpath("//form[@id='header:headerForm']/table/tbody/tr[3]/td/table/tbody/tr/td[2]/div/a")).click();
 		driver.findElement(By.xpath("//form[@id='header:headerForm']/table/tbody/tr/td/a")).click();
-		driver.findElement(By.xpath("//table[@id='productListForm:table']/tbody/tr[10]/td[6]/a")).click();
-		driver.findElement(By.xpath("//form[@id='header:headerForm']/table/tbody/tr[3]/td/table/tbody/tr/td[2]/div/a")).click();
+		//driver.findElement(By.xpath("//table[@id='productListForm:table']/tbody/tr[10]/td[6]/a")).click();
+		//driver.findElement(By.xpath("//form[@id='header:headerForm']/table/tbody/tr[3]/td/table/tbody/tr/td[2]/div/a")).click();
 		driver.findElement(By.xpath("//form[@id='header:headerForm']/table/tbody/tr[3]/td/table/tbody/tr/td/p/a")).click();
-		driver.findElement(By.linkText("logout")).click();
+		//driver.findElement(By.linkText("logout")).click();
 	}
 
 }
